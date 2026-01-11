@@ -5,7 +5,7 @@ Track job applications by syncing Gmail, classifying emails, and organizing them
 ## Setup
 
 1. Copy the env template:
-   - `copy .env.local.example .env.local`
+   - `cp .env.local.example .env.local`
 2. Fill in values in `.env.local`.
 3. Install dependencies and run the app:
 
