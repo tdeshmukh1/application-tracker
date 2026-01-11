@@ -28,6 +28,8 @@ export const classifyApplicationEmail = async (
     "If isJob is false, keep company/role/status as empty strings.\n\n" +
     `Email:\n${JSON.stringify(input)}`;
 
+  console.log("LLM classification: Ollama request start");
+
   const response = await fetch(`${baseUrl}/api/generate`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -39,6 +41,7 @@ export const classifyApplicationEmail = async (
   });
 
   if (!response.ok) {
+    console.log("LLM classification: Ollama request failed", response.status);
     return null;
   }
 
