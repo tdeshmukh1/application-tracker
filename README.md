@@ -2,14 +2,6 @@
 
 Track job applications by syncing Gmail, classifying emails, and organizing them into Applied/Accepted/Rejected columns.
 
-## Project Location
-
-This repo lives at:
-
-```
-c:\Users\tanay\OneDrive\Documents\Work\application-tracker
-```
-
 ## Setup
 
 1. Copy the env template:
